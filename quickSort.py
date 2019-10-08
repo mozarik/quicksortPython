@@ -56,18 +56,20 @@ def partition(alist,first,last):
 
    temp = alist[first]
    alist[first] = alist[rightmark]
+   print("Nilai {} swap".format(temp))
    alist[rightmark] = temp
+   print("Dengan nilai : {}".format(alist[first]))
    
-   print("Step by Step of A List Changing Very Iteration Iteration :    {}".format(alist))
-
+   print("\nStep by Step of A List Changing Very Iteration Iteration :    {}".format(alist))
+   print("=====================================================================================================================")
 
    return rightmark
 
 alist = randomArray()
 
-print("List yang akan di sorted menggunakan metode quick sort adalah : {}".format(alist))
+print("\n\nList yang akan di sorted menggunakan metode QUICK SORT adalah : {}\n\n".format(alist))
 
 quickSort(alist)
 
-print("Final Sorted List : \t\t\t\t\t      {}".format(alist))
+print("\nFinal Sorted List : \t\t\t\t\t      {}".format(alist))
     
